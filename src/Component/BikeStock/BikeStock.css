@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap");
+.bikestock-container {
+  padding: 20px;
+  min-height: 100vh;
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+/* header */
+
+/* bikestockheadertext */
+.bikestock-header-text {
+  background-color: black;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 700;
+  color: white;
+  padding: 4px 20px;
+  letter-spacing: 1px;
+}
+
+.bikestock-header-text::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: white;
+  margin-left: -11px;
+  margin-top: 10px;
+}
+
+.bikestock-header-text::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: white;
+  margin-left: 6px;
+  margin-top: 10px;
+}
+/* bikestockheadertext ends */
+
+/* bikestock-brands */
+.bikestock-brands {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 15px;
+  letter-spacing: 2px;
+  color: gray;
+}
+
+.bikestock-brandname {
+  font-family: "Times New Roman", Times, serif;
+  color: maroon;
+}
+/* bikestock-brands  end*/
+
+/* header end*/
+
+/* main  */
+.bikestock-card-list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+@media screen and (max-width: 886px) {
+  .bikestock-card-list {
+    justify-content: space-evenly;
+  }
+}
